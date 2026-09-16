@@ -19,7 +19,7 @@ A framework-free static website built for Cloudflare Pages.
 
 Search the project for:
 
-`hello@manwapartners.com`
+`support@manwapartners.org`
 
 Replace it if you choose another business email.
 
@@ -63,4 +63,4 @@ Cloudflare Pages supports framework-free static HTML sites. Test the generated `
 
 ## Positioning choice
 
-The homepage now uses broader agency positioning while presenting **Productivity Software / AI** and **Home Decor / Home & Living** as two focus areas. This keeps the brand flexible without making the homepage vague.
+The homepage is now focused on **Mobile Tech & Wearables**, with Mobile Tech and Wearables treated as closely related pillars. The site emphasizes smartphones, foldables, smartwatches, fitness wearables, smart rings, mobile audio, accessories, reviews, comparisons, tests, and buyer-intent YouTube content.

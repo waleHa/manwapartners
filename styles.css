@@ -24,3 +24,95 @@
 .site-header.scrolled .brand img{width:52px;height:52px}
 @media(max-width:1000px){.site-nav{inset:92px 20px auto}.site-header .brand{font-size:1.22rem}.site-header .brand img,.site-header.scrolled .brand img{width:50px;height:50px}}
 @media(max-width:520px){.site-header .brand{font-size:1.08rem;gap:10px}.site-header .brand img,.site-header.scrolled .brand img{width:46px;height:46px}}
+
+
+/* V3: stronger hierarchy for service/process cards */
+.section-services{
+  background:linear-gradient(180deg,#FFFDF8 0%,#F7F0DF 100%);
+}
+.service-card{
+  background:#FFFFFF;
+  border:1px solid rgba(69,131,147,.24);
+  box-shadow:0 14px 36px rgba(18,57,61,.07);
+}
+.service-card::before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  height:4px;
+  background:var(--teal);
+}
+.service-card:nth-child(even)::before{
+  background:var(--blue);
+}
+.service-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 44px rgba(18,57,61,.12);
+  border-color:rgba(52,169,157,.45);
+}
+.service-wide{
+  background:linear-gradient(135deg,#FFF3C8 0%,#FFF9E8 100%);
+}
+
+.section-process{
+  background:#F4E9CF;
+}
+.section-process .section-heading{
+  margin-bottom:48px;
+}
+.process-grid{
+  gap:14px;
+  border:0;
+  border-radius:0;
+  overflow:visible;
+}
+.process-step{
+  min-height:280px;
+  border:1px solid rgba(69,131,147,.24);
+  border-top:4px solid var(--teal);
+  border-radius:20px;
+  background:#FFFFFF;
+  box-shadow:0 12px 30px rgba(18,57,61,.07);
+}
+.process-step:nth-child(even){
+  border-top-color:var(--blue);
+}
+.process-step:last-child{
+  border-right:1px solid rgba(69,131,147,.24);
+}
+.process-step:hover{
+  background:#FFF9E8;
+  transform:translateY(-4px);
+  box-shadow:0 18px 40px rgba(18,57,61,.10);
+}
+.process-step>span{
+  margin-bottom:52px;
+}
+
+@media(max-width:1000px){
+  .process-step,
+  .process-step:nth-child(2n),
+  .process-step:last-child{
+    border-right:1px solid rgba(69,131,147,.24);
+    border-bottom:1px solid rgba(69,131,147,.24);
+  }
+}
+@media(max-width:760px){
+  .process-grid{
+    gap:12px;
+  }
+  .process-step,
+  .process-step:nth-child(2n),
+  .process-step:last-child{
+    border:1px solid rgba(69,131,147,.24);
+    border-top:4px solid var(--teal);
+  }
+  .process-step:nth-child(even){
+    border-top-color:var(--blue);
+  }
+  .process-step>span{
+    margin-bottom:34px;
+  }
+}
